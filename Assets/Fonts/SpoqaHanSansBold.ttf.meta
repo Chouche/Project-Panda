@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: fc7a17bf8259a9943a4979e47212dead
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SpoqaHanSans
+  fontNames:
+  - SpoqaHanSans
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 25e20a01a13f48942a6d53deae08a73b, type: 3}
+  - {fileID: 12800000, guid: b7ef2ea15f3824348b1683c665eaf7d7, type: 3}
+  - {fileID: 12800000, guid: d8348aaed4e14bd45a0ed89c62c1ded4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
