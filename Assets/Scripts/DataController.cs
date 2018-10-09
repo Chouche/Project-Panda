@@ -8,6 +8,9 @@ public class DataController : MonoBehaviour {
 
     public LessonData[] allLessonData;
 
+    // Use to choose the lesson 
+    public int currentlevel = -1; 
+
 	// Use this for initialization
 	void Start () {
         DontDestroyOnLoad(gameObject);
@@ -18,6 +21,8 @@ public class DataController : MonoBehaviour {
         {
             allLessonData[i].idLesson = i;
         }
+
+
 	}
 	
     public LessonData GetCurrentLessonData()

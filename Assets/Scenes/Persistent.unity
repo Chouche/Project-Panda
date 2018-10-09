@@ -146,71 +146,47 @@ MonoBehaviour:
     percentageDone: 0
     levels:
     - idLevel: 0
-      nbStarGet: 0
+      nbStarGet: 50
       questions:
-      - questionText: 
+      - questionText: helllo
+        questionImage: {fileID: 0}
+        questionAudio: {fileID: 0}
+        limitInSeconds: 30
+        answers:
+        - answerText: caca1
+          isCorrect: 1
+        - answerText: caca2
+          isCorrect: 0
+      - questionText: 'hello 2 '
         questionImage: {fileID: 0}
         questionAudio: {fileID: 0}
         limitInSeconds: 0
-        answers: []
-      - questionText: 
-        questionImage: {fileID: 0}
-        questionAudio: {fileID: 0}
-        limitInSeconds: 0
-        answers: []
-      - questionText: 
-        questionImage: {fileID: 0}
-        questionAudio: {fileID: 0}
-        limitInSeconds: 0
-        answers: []
-      - questionText: 
-        questionImage: {fileID: 0}
-        questionAudio: {fileID: 0}
-        limitInSeconds: 0
-        answers: []
-      - questionText: 
-        questionImage: {fileID: 0}
-        questionAudio: {fileID: 0}
-        limitInSeconds: 0
-        answers: []
-      - questionText: 
-        questionImage: {fileID: 0}
-        questionAudio: {fileID: 0}
-        limitInSeconds: 0
-        answers: []
-      - questionText: 
-        questionImage: {fileID: 0}
-        questionAudio: {fileID: 0}
-        limitInSeconds: 0
-        answers: []
-      - questionText: 
-        questionImage: {fileID: 0}
-        questionAudio: {fileID: 0}
-        limitInSeconds: 0
-        answers: []
-      - questionText: 
-        questionImage: {fileID: 0}
-        questionAudio: {fileID: 0}
-        limitInSeconds: 0
-        answers: []
-      - questionText: 
-        questionImage: {fileID: 0}
-        questionAudio: {fileID: 0}
-        limitInSeconds: 0
-        answers: []
-      - questionText: 
-        questionImage: {fileID: 0}
-        questionAudio: {fileID: 0}
-        limitInSeconds: 0
-        answers: []
-      - questionText: 
-        questionImage: {fileID: 0}
-        questionAudio: {fileID: 0}
-        limitInSeconds: 0
-        answers: []
+        answers:
+        - answerText: ca2
+          isCorrect: 1
+        - answerText: ca1
+          isCorrect: 0
     - idLevel: 0
       nbStarGet: 0
-      questions: []
+      questions:
+      - questionText: Bonjour
+        questionImage: {fileID: 0}
+        questionAudio: {fileID: 0}
+        limitInSeconds: 30
+        answers:
+        - answerText: cola
+          isCorrect: 1
+        - answerText: cola2
+          isCorrect: 0
+      - questionText: comment va?
+        questionImage: {fileID: 0}
+        questionAudio: {fileID: 0}
+        limitInSeconds: 30
+        answers:
+        - answerText: bien
+          isCorrect: 1
+        - answerText: pas bien
+          isCorrect: 0
     - idLevel: 0
       nbStarGet: 0
       questions: []

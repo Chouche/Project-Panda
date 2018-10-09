@@ -22,6 +22,10 @@ public class GameController : MonoBehaviour {
     private int idCurrentLesson;
     private int playerScore;
 
+    public GameObject questionDisplay;
+    public GameObject levelEndDisplay;
+    public Text starGetDisplay;
+
     private List<GameObject> answerButtonGameObjects = new List<GameObject>();
 
 
@@ -29,11 +33,13 @@ public class GameController : MonoBehaviour {
 	void Start () {
         dataController = FindObjectOfType<DataController>();
         currentLessonData = dataController.GetCurrentLessonData();
-        idCurrentLesson = currentLessonData.idLesson;
+        idCurrentLesson = dataController.currentlevel; 
         questionPool = currentLessonData.levels[idCurrentLesson].questions;
 
-        playerScore = 0;
+        playerScore = 3;
         questionIndex = 0;
+        
+
 
         ShowQuestion();
         isLevelActive = true;
@@ -48,6 +54,7 @@ public class GameController : MonoBehaviour {
         for (int i = 0; i < questionData.answers.Length; i++)
         {
             GameObject answerButtonGameObject = answerButtonObjectPool.GetObject();
+            answerButtonGameObjects.Add(answerButtonGameObject);
             answerButtonGameObject.transform.SetParent(answerButtonParent);
 
             AnswerButton answerButton = answerButtonGameObject.GetComponent<AnswerButton>();
@@ -64,8 +71,34 @@ public class GameController : MonoBehaviour {
         }
     }
 
+    public void AnswerButtonClicked(bool isCorrect)
+    {
+        if (!isCorrect)
+        {
+            playerScore -= 1;
+        }
+
+        if(questionPool.Length > questionIndex + 1)
+        {
+            questionIndex++;
+            ShowQuestion();
+
+        }
+        else
+        {
+            EndRound();
+        }
+    }
+
+    public void EndRound()
+    {
+        isLevelActive = false;
+        questionDisplay.SetActive(false);
+        levelEndDisplay.SetActive(true);
+    }
+
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        starGetDisplay.text = "Nb Stars " + playerScore.ToString();
+    }
 }
